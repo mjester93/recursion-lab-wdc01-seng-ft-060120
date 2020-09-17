@@ -43,3 +43,13 @@ function addUpTo(array, index) {
 function maxOf(array) {
   return array.length === 1 ? array[0] : Math.max(array.pop(), maxOf(array))
 }
+
+function includesNumber(array, number) {
+  if (array.length === 0) {
+      return false;
+  } else if (array.shift() === number]) {
+    return true;
+  } else {
+    return includesNumber(array, number)
+  }
+}
