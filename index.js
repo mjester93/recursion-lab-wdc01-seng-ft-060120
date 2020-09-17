@@ -41,5 +41,5 @@ function addUpTo(array, index) {
 }
 
 function maxOf(array) {
-  return array.length === 1 ? array[0] : return Math.max(array.pop(), maxOf(array))
+  return array.length === 1 ? array[0] : Math.max(array.pop(), maxOf(array))
 }
