@@ -36,6 +36,6 @@ function addUpTo(array, index) {
   if (index < 1) {
     return array[index]
   } else {
-    return array[index] + array[new_index]
+    return array[index] + addUpTo(array, new_index)
   }
 }
