@@ -12,5 +12,4 @@ function printString(string) {
 
 function reverseString(string) {
   return string.length < 2 ? string : reverseString(string.substring(1) + string[0])
-  }
 }
