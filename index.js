@@ -47,7 +47,7 @@ function maxOf(array) {
 function includesNumber(array, number) {
   if (array.length === 0) {
       return false;
-  } else if (array.shift() === number]) {
+  } else if (array.shift() === number) {
     return true;
   } else {
     return includesNumber(array, number)
