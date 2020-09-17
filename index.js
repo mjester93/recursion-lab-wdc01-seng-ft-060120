@@ -39,3 +39,15 @@ function addUpTo(array, index) {
     return array[index] + addUpTo(array, new_index)
   }
 }
+
+function maxOf(array) {
+  if (array.length < 1) {
+    return array[0]
+  } else {
+    if (array[0] > array[array.length - 1]) {
+      return maxOf(array.splice(0, array.length - 1))
+    } else {
+      return maxOf(array.splice(1, array.length - 1))
+    }
+  }
+}
