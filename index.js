@@ -19,5 +19,13 @@ function reverseString(string) {
 }
 
 function isPalindrome(string) {
-  return string === reverseString(string)
+  let length = string.length;
+
+  if (length < 2) {
+    return true;
+  } else if (myString[length - 1] === myString[0]) {
+    return isPalindrome(myString.substring(1, length - 1));
+  } else {
+    return false;
+  }
 }
