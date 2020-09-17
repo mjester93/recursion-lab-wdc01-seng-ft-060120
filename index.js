@@ -11,5 +11,5 @@ function printString(string) {
 }
 
 function reverseString(string) {
-  console.log(string[-1])
+  console.log(string[string.length - 1])
 }
