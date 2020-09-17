@@ -11,10 +11,6 @@ function printString(string) {
 }
 
 function reverseString(string) {
-  if (string.length < 2) {
-    return string
-  }
-  else {
-    return reverseString(string.substring(1) + string[0])
+  return string.length < 2 ? string : reverseString(string.substring(1) + string[0])
   }
 }
