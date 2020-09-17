@@ -44,10 +44,6 @@ function maxOf(array) {
   if (array.length === 1) {
     return array[0]
   } else {
-    if (array[0] > array[array.length - 1]) {
-      return maxOf(array.slice(0, array.length))
-    } else {
-      return maxOf(array.slice(1, array.length))
-    }
+    return Math.math(array.pop(), maxOf(array))
   }
 }
