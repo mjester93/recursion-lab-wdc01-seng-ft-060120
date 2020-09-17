@@ -17,3 +17,7 @@ function reverseString(string) {
     return reverseString(string.substring(1)) + string[0];
   }
 }
+
+function isPalindrome(string) {
+  return string === reverseString(string)
+}
