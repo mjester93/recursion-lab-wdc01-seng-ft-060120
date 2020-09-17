@@ -11,5 +11,10 @@ function printString(string) {
 }
 
 function reverseString(string) {
-  console.log(string[string.length - 1])
+  if (string.length < 2) {
+    return string
+  }
+  else {
+    return reverseString(string.substring(1) + string[0])
+  }
 }
